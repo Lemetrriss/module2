@@ -1,16 +1,19 @@
 package classWork;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Accountant {
 
-    private static Scanner sc = new Scanner(System.in);
-    private static Employee[] employees = new Employee[sc.nextInt()];
+    private Scanner sc = new Scanner(System.in);
+    private Random r = new Random();
 
-    public static void main(String[] args) {
-        Random r = new Random();
-        Object[][] table = new Object[employees.length][7];
+    private Employee[] employees = new Employee[sc.nextInt()];
+
+    private Object[][] table = new Object[employees.length][13];
+
+    private void proceed() {
 
         for (int i = 0; i < table.length; i++) {
 
@@ -19,6 +22,7 @@ public class Accountant {
             for (int j = 1; j < table[i].length; j++) {
                 table[i][j] = 10000*r.nextDouble();
             }
+            System.out.println(Arrays.toString(table[i]));
         }
 
         for (int i = 0; i < table.length; i++) {
@@ -32,5 +36,9 @@ public class Accountant {
             }
             employees[i].calcSalary(salary);
         }
+    }
+
+    public static void main(String[] args) {
+        new Accountant().proceed();
     }
 }
