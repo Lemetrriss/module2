@@ -1,4 +1,4 @@
-package classWork;
+package lab_2_1_5;
 
 public class Maincomp {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package classWork;
+package lab_2_2_3;
 
 class Employee {
     private String name;
