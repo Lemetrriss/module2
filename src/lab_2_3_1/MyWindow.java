@@ -1,11 +1,11 @@
 package lab_2_3_1;
 
 public class MyWindow {
-    double width;
-    double height;
-    int numberOfGlass;
-    String color;
-    boolean isOpen;
+    private double width;
+    private double height;
+    private int numberOfGlass;
+    private String color;
+    private boolean isOpen;
 
     public MyWindow(double width, double height, int numberOfGlass, String color, boolean isOpen) {
         this.width = width;
