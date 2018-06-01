@@ -1,7 +1,5 @@
 package lab_2_3_1;
 
-import java.util.Arrays;
-
 public class MyWindow {
     private double width;
     private double height;
@@ -40,18 +38,24 @@ public class MyWindow {
 
     public static void main(String[] args) {
         MyWindow mw = new MyWindow(12.31, 45.67, 2, "white", true);
-        System.out.println(mw);
+//        System.out.println(mw);
+        mw.printFields();
         MyWindow mw1 = new MyWindow();
-        System.out.println(mw1);
+//        System.out.println(mw1);
+        mw1.printFields();
         System.out.println();
         MyWindow[] arr = new MyWindow[3];
         arr[0] = new MyWindow();
         arr[1] = new MyWindow(87.866, 98.7644);
         arr[2] = new MyWindow(7, "Blue", false);
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            arr[i].printFields();
         }
 
+    }
+
+    public void printFields(){
+        System.out.println(this);
     }
 
     @Override
