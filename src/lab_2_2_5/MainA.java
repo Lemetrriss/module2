@@ -10,6 +10,6 @@ class MainA {
         double radius = sc.nextDouble();
 
         System.out.println(new A().calcSquare(radius));
-
+        System.out.println();
     }
 }
