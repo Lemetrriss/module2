@@ -2,7 +2,7 @@ package lab_2_4.lab_2_4_6;
 
 public class Pyramid {
     public static void main(String[] args) {
-        printPyramid(10);
+        printPyramid(9);
     }
 
     private static void printPyramid(int h) {
