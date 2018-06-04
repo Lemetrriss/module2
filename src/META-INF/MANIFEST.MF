@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: Main.jar
+Main-Class: theme_2_5.lab_2_5_5.Main
+
