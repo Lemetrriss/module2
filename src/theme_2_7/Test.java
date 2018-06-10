@@ -2,7 +2,7 @@ package theme_2_7;
 
 abstract class Test {
     int maxSpeed = 160;
-    abstract void test();
+//    abstract void test();
 }
 
 class Test2 extends Test{
@@ -16,6 +16,6 @@ class Test2 extends Test{
 class Main{
     public static void main(String[] args) {
         Test t = new Test2();
-        t.test();
+        ((Test2)t).test();
     }
 }
