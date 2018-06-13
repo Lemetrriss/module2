@@ -1,4 +1,4 @@
-package lab_2_2_3;
+package theme_2_2.lab_2_2_3;
 
 class Employee {
     private String name;

@@ -1,4 +1,4 @@
-package lab_2_2_1;
+package theme_2_2.lab_2_2_1;
 
 import java.util.Random;
 import java.util.Scanner;
