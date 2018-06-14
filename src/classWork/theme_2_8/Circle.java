@@ -2,8 +2,8 @@ package classWork.theme_2_8;
 
 public class Circle extends Shape {
 
-    public Circle(double radius) {
-        super(radius);
+    public Circle(double radius, String name) {
+        super(radius, name);
     }
 
     @Override
@@ -13,6 +13,6 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "Circle " + getSize() + " area = " + calcArea();
+        return "Circle " + getSize() + ", name - " + getName() + ", area = " + calcArea();
     }
 }

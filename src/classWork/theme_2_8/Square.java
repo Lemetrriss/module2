@@ -2,8 +2,8 @@ package classWork.theme_2_8;
 
 public class Square extends Shape {
 
-    public Square(double side) {
-        super(side);
+    public Square(double side, String name) {
+        super(side, name);
     }
 
     @Override
@@ -13,6 +13,6 @@ public class Square extends Shape {
 
     @Override
     public String toString() {
-        return "Square " + getSize()+" area = " + calcArea();
+        return "Square " + getSize() + ", name - " + getName() + ", area = " + calcArea();
     }
 }
