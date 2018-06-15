@@ -1,7 +1,6 @@
 package classWork.theme_2_8;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 
 class Main {
@@ -11,8 +10,8 @@ class Main {
 
 
         Shape[] shapes = {new Circle(3.5, "Dima"), new Square(7, "Oleg"), new Circle(3, "Igor"), new Square(3, "Vasya"), new Square(6, "Dima"),};
-        for (int i = 0; i < shapes.length; i++) {
-            System.out.println(shapes[i].calcArea());
+        for (Shape shape1 : shapes) {
+            System.out.println(shape1.calcArea());
         }
 
         System.out.println("-----------------------");
