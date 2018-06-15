@@ -1,6 +1,6 @@
 package theme_2_8.lab_2_8_5;
 
-public class Student implements Drawable, Comparable<Student>{
+abstract class Student implements Drawable, Comparable<Student>{
     String name;
     int mark;
     double avarYearMark;
