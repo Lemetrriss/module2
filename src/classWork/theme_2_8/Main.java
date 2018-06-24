@@ -33,5 +33,10 @@ class Main {
         for (Shape shape : shapes) {
             shape.draw();
         }
+        try {
+            Shape shape = Shape.parseShape("Circle:RED:10,20");
+        } catch (InvalidShapeStringException e) {
+            e.printStackTrace();
+        }
     }
 }

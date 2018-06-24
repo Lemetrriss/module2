@@ -13,6 +13,6 @@ public class Square extends Shape {
 
     @Override
     public String toString() {
-        return "Square " + getSize() + ", name - " + getName() + ", area = " + calcArea();
+        return "Square" + getSize() + ", name - " + getName() + ", area = " + calcArea();
     }
 }
