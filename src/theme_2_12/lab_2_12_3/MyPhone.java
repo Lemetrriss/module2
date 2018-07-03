@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 class MyPhone {
-    private MyPhone.MyPhoneBook myPhoneBook = new MyPhone().new MyPhoneBook();
+    private MyPhoneBook myPhoneBook = new MyPhoneBook();
 
     MyPhone() {
     }
@@ -35,7 +35,7 @@ class MyPhone {
 
         private int count;
         private PhoneNumber[] phoneNumbers = new PhoneNumber[10];
-        MyPhoneBook my = new MyPhoneBook();
+//        MyPhoneBook my = new MyPhoneBook();
 
         public void sortByName(){
             Arrays.sort(phoneNumbers, new Comparator<PhoneNumber>() {
@@ -61,17 +61,7 @@ class MyPhone {
 
         void addPhoneNumber(String name, String phone){
             if(count<phoneNumbers.length) {
-                phoneNumbers[count++] = my.new PhoneNumber(name, phone);
-            }
-        }
-
-        void printPhoneNumber(){
-            System.out.println(phoneNumbers[count-1]);
-        }
-
-        void printPhoneNumber(PhoneNumber[] arr){
-            for (PhoneNumber phoneNumber : arr) {
-                System.out.println(phoneNumber);
+                phoneNumbers[count++] = new PhoneNumber(name, phone);
             }
         }
 
